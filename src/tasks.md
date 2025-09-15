@@ -86,7 +86,7 @@ fn update(&mut self, message: Self::Message) -> cosmic::Task<cosmic::Action<Self
 
 ## Streaming
 
-Alternatively, they can produced from types which implement [Stream][rust-stream]. Such as from the receiving end of a channel which it is being pushed to from anothre thread.
+Alternatively, they can produced from types which implement [Stream][rust-stream]. Such as from the receiving end of a channel which it is being pushed to from another thread.
 
 ```rs
 fn update(&mut self, message: Self::Message) -> cosmic::Task<cosmic::Action<Self::Message>> {
